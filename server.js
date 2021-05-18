@@ -32,7 +32,7 @@ oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN})
 
 app.use(bodyParser.json());
 
-//api post request
+//api post request with email address of the user who is making the request 
 app.post('/sendemail',function(req,res){
     async function sendMail (){
     try{
